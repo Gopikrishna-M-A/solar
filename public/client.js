@@ -34,7 +34,16 @@ scene.add(sun)
 sun.position.set(0,0,0)
 
 
-
+window.addEventListener(
+    'resize',
+    () => {
+        camera.aspect = window.innerWidth / window.innerHeight
+        camera.updateProjectionMatrix()
+        renderer.setSize(window.innerWidth, window.innerHeight)
+        render()
+    },
+    false
+)
 
 
 
@@ -195,16 +204,7 @@ pluto.position.set(10,0,0)
 
 
 
-window.addEventListener(
-    'resize',
-    () => {
-        camera.aspect = window.innerWidth / window.innerHeight
-        camera.updateProjectionMatrix()
-        renderer.setSize(window.innerWidth, window.innerHeight)
-        render()
-    },
-    false
-)
+
 
 
 function animate() {
