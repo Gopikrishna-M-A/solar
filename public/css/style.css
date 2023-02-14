@@ -8,10 +8,7 @@ html {
     background: black;
     overflow: hidden;
   }
-  body{
-    min-width:1751px ;
-    min-height:1256px ;
-  }
+ 
   
   #stars {
     width: 1px;
