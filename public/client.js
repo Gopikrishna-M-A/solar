@@ -23,7 +23,7 @@ const controls = new OrbitControls(camera, renderer.domElement)
 
 
 
-const sunGeometry = new THREE.SphereGeometry()
+const sunGeometry = new THREE.SphereGeometry(1.5)
 const sunMaterial = new THREE.MeshBasicMaterial({
 	color:0xffc400,
 	wireframe:true
@@ -56,7 +56,7 @@ mercury.position.set(2,0,0)
 
 //venus
 
-const venusGeometry = new THREE.SphereGeometry(0.3)
+const venusGeometry = new THREE.SphereGeometry(0.2)
 const venusMaterial = new THREE.MeshBasicMaterial({
 	color:0xDCF3E5,
 	wireframe:true
@@ -87,7 +87,7 @@ earth.position.set(4,0,0)
 
 //mars
 
-const marsGeometry = new THREE.SphereGeometry(0.3)
+const marsGeometry = new THREE.SphereGeometry(0.1)
 const marsMaterial = new THREE.MeshBasicMaterial({
 	color:0x8B0000,
 	wireframe:true
@@ -102,7 +102,7 @@ mars.position.set(5,0,0)
 
 //jupiter
 
-const jupiterGeometry = new THREE.SphereGeometry(0.3)
+const jupiterGeometry = new THREE.SphereGeometry(0.9)
 const jupiterMaterial = new THREE.MeshBasicMaterial({
 	color:0xbfbdb6,
 	wireframe:true
@@ -142,7 +142,7 @@ ring.position.set(7,0,0)
 
 //uranus
 
-const uranusGeometry = new THREE.SphereGeometry(0.3)
+const uranusGeometry = new THREE.SphereGeometry(0.5)
 const uranusMaterial = new THREE.MeshBasicMaterial({
 	color:0x022d59,
 	wireframe:true
@@ -156,7 +156,7 @@ uranusObj.add(uranus)
 uranus.position.set(8,0,0)
 
 //neptune
-const neptuneGeometry = new THREE.SphereGeometry(0.3)
+const neptuneGeometry = new THREE.SphereGeometry(0.4)
 const neptuneMaterial = new THREE.MeshBasicMaterial({
 	color:0x004e9d,
 	wireframe:true
@@ -171,7 +171,7 @@ neptune.position.set(9,0,0)
 
 //pluto
 
-const plutoGeometry = new THREE.SphereGeometry(0.3)
+const plutoGeometry = new THREE.SphereGeometry(0.05)
 const plutoMaterial = new THREE.MeshBasicMaterial({
 	color:0xADD8E6,
 	wireframe:true
@@ -183,6 +183,7 @@ scene.add(plutoObj)
 plutoObj.add(pluto)
 
 pluto.position.set(10,0,0)
+
 
 
 
