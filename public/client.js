@@ -48,6 +48,7 @@ window.addEventListener(
 
 
 
+
 //mercury
 
 const mercuryGeometry = new THREE.SphereGeometry(0.3)
@@ -123,7 +124,7 @@ const jupiter = new THREE.Mesh(jupiterGeometry,jupiterMaterial)
 scene.add(jupiterObj)
 jupiterObj.add(jupiter)
 
-jupiter.position.set(6,0,0)
+jupiter.position.set(6.5,0,0)
 
 //saturn
 
@@ -134,7 +135,7 @@ const saturnMaterial = new THREE.MeshBasicMaterial({
 })
 const saturn = new THREE.Mesh(saturnGeometry,saturnMaterial)
 const saturnObj = new THREE.Object3D()
-saturn.position.set(7,0,0)
+saturn.position.set(9,0,0)
 scene.add(saturnObj)
 saturnObj.add(saturn)
 
@@ -146,7 +147,7 @@ const ringMaterial = new THREE.MeshBasicMaterial({
 const ring = new THREE.Mesh(ringGeometry,ringMaterial)
 saturnObj.add(ring)
 ring.rotation.x= Math.PI / 2
-ring.position.set(7,0,0)
+ring.position.set(9,0,0)
 
 
 
@@ -163,7 +164,7 @@ const uranus = new THREE.Mesh(uranusGeometry,uranusMaterial)
 scene.add(uranusObj)
 uranusObj.add(uranus)
 
-uranus.position.set(8,0,0)
+uranus.position.set(10.8,0,0)
 
 //neptune
 const neptuneGeometry = new THREE.SphereGeometry(0.4)
@@ -177,7 +178,7 @@ const neptune = new THREE.Mesh(neptuneGeometry,neptuneMaterial)
 scene.add(neptuneObj)
 neptuneObj.add(neptune)
 
-neptune.position.set(9,0,0)
+neptune.position.set(12,0,0)
 
 //pluto
 
@@ -192,9 +193,7 @@ const pluto = new THREE.Mesh(plutoGeometry,plutoMaterial)
 scene.add(plutoObj)
 plutoObj.add(pluto)
 
-pluto.position.set(10,0,0)
-
-
+pluto.position.set(12.7,0,0)
 
 
 
@@ -209,16 +208,16 @@ pluto.position.set(10,0,0)
 
 function animate() {
     requestAnimationFrame(animate)
-	
-    mercuryObj.rotation.y += 0.012
-    venusObj.rotation.y += 0.0210
-    earthObj.rotation.y += 0.019
-    marsObj.rotation.y += 0.024
-    jupiterObj.rotation.y += 0.0298
+   
+    mercuryObj.rotation.y += 0.01
+    venusObj.rotation.y += 0.02
+    earthObj.rotation.y += 0.01
+    marsObj.rotation.y += 0.02
+    jupiterObj.rotation.y += 0.015
     saturnObj.rotation.y += 0.011
     uranusObj.rotation.y += 0.005
-    neptuneObj.rotation.y += 0.036
-    plutoObj.rotation.y += 0.023
+    neptuneObj.rotation.y += 0.016
+    plutoObj.rotation.y += 0.013
 
     sun.rotation.y += 0.006
 
