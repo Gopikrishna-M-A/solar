@@ -210,14 +210,14 @@ function animate() {
     requestAnimationFrame(animate)
    
     mercuryObj.rotation.y += 0.01
-    venusObj.rotation.y += 0.02
-    earthObj.rotation.y += 0.01
-    marsObj.rotation.y += 0.02
-    jupiterObj.rotation.y += 0.015
-    saturnObj.rotation.y += 0.011
-    uranusObj.rotation.y += 0.005
-    neptuneObj.rotation.y += 0.016
-    plutoObj.rotation.y += 0.013
+    venusObj.rotation.y += 0.023
+    earthObj.rotation.y += 0.016
+    marsObj.rotation.y += 0.027
+    jupiterObj.rotation.y += 0.019
+    saturnObj.rotation.y += 0.01177
+    uranusObj.rotation.y += 0.00532
+    neptuneObj.rotation.y += 0.0169
+    plutoObj.rotation.y += 0.0139
 
     sun.rotation.y += 0.006
 
